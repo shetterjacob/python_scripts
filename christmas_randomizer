@@ -1,0 +1,24 @@
+import random
+
+list_of_people = ['Brandon', 'Sarah', 'Jacob', 'Alyssa', 'Mom', 'BreeAnna']
+
+people_without_pair = ['Brandon', 'Sarah', 'Jacob', 'Alyssa', 'Mom', 'BreeAnna']
+
+my_dict = {}
+
+bad_dict = {'Brandon':'Sarah', 'Sarah':['Brandon','Mom'], 'Jacob':'BreeAnna', 'Mom': 'Sarah', 'BreeAnna':'Jacob', 'Alyssa':''}
+
+count = 0
+
+while len(people_without_pair) > 0:
+    pair = random.choice(people_without_pair)
+    item = list_of_people[count]
+    if pair not in bad_dict[item] and item != pair:
+        my_dict[item] = pair
+        removal = people_without_pair.index(pair)
+        people_without_pair.pop(removal)
+        count += 1
+    else:
+        continue
+
+print(my_dict)
