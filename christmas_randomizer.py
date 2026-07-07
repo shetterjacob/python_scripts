@@ -1,12 +1,19 @@
 import random
 
-list_of_people = ['Brandon', 'Sarah', 'Jacob', 'Alyssa', 'Mom', 'BreeAnna']
+list_of_people = ["Brandon", "Sarah", "Jacob", "Alyssa", "Mom", "BreeAnna"]
 
-people_without_pair = ['Brandon', 'Sarah', 'Jacob', 'Alyssa', 'Mom', 'BreeAnna']
+people_without_pair = ["Brandon", "Sarah", "Jacob", "Alyssa", "Mom", "BreeAnna"]
 
 my_dict = {}
 
-bad_dict = {'Brandon':'Sarah', 'Sarah':['Brandon','Mom'], 'Jacob':'BreeAnna', 'Mom': 'Sarah', 'BreeAnna':'Jacob', 'Alyssa':''}
+bad_dict = {
+    "Brandon": "Sarah",
+    "Sarah": ["Brandon", "Mom"],
+    "Jacob": "BreeAnna",
+    "Mom": "Sarah",
+    "BreeAnna": "Jacob",
+    "Alyssa": "",
+}
 
 count = 0
 
